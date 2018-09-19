@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="bug-tracker.js"></script>
+    <script>
+        $(document).ready(function () {
+            let manager = generateBugManager();
+            manager.output('#content');
+            manager.report('kiwi', 'judge rip', true, 5);
+            manager.report('lemon', 'judge rip ^ 2', false, 18);
+            manager.report('apple', 'judge rip?', true, 155);
+        })
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="titlebar">Bug tracker</div>
+    <div id="content"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus route</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="bus-route.js"></script>
+</head>
+<body>
+
+<section>
+    <h2>Given bus route</h2>
+    <ol id="bus-stops" type="1">
+        <!-- Select bus stops from here -->
+    </ol>
+</section>
+
+<div class="wrapper">
+    <section id="enter-stops">
+        <h2>Enter bus stops:</h2>
+        <label>First bus stop's number:
+            <input name="first-stop" type="number">
+        </label>
+        <label>Last bus stop's number:
+            <input name="last-stop" type="number">
+        </label>
+        <button onclick="busRoute()">Enter</button>
+    </section>
+</div>
+
+<section>
+    <h2>Selected route</h2>
+    <h3 id="selected-route">Bus stops: <span>none</span></h3>
+    <ul id="selected-bus-stops">
+        <!-- Display your selected bus stops here -->
+    </ul>
+</section>
+
+</body>
+</html>
